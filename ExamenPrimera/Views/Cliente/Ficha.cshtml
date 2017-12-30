@@ -1,0 +1,33 @@
+﻿@model ExamenPrimera.Models.Clientes
+
+<h2>Ficha de Clientes</h2>
+
+<fieldset class="form-horizontal">
+    <legend class="label">Informacion de los Clientes</legend>
+    <label class="control-label">ID</label>
+    <div class="form-group">
+        <div class="text-muted">@Html.DisplayFor(m => m.IDCliente)</div>
+    </div>
+    <label class="control-label">Rut</label>
+    <div class="form-group">
+        <div class="text-muted">@Html.DisplayFor(m => m.Rut)</div>
+    </div>
+    <label class="control-label">Nombre del Clientes</label>
+    <div class="form-group">
+        <div class="text-muted">@Html.DisplayFor(m => m.NombreCliente)</div>
+    </div>
+    <label class="control-label">Apellido</label>
+    <div class="form-group">
+        <div class="text-muted">@Html.DisplayFor(m => m.ApellidoCliente)</div>
+    </div>
+    <label class="control-label">Direccion</label>
+    <div class="form-group">
+        <div class="text-muted">@Html.DisplayFor(m => m.Direccion)</div>
+    </div>
+    <label class="control-label">Tipo</label>
+    <div class="form-group">
+        <div class="text-muted">@Html.DisplayFor(m => m.Tipo)</div>
+    </div>
+
+
+</fieldset>

@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Formulario";
+}
+<fieldset>
+    <legend> Ingresar vacas</legend>
+    @using (@Html.BeginForm("Guardar", "Producto", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+
+        <div class="form-group">
+            <span class="col-md-2">
+                Nombre
+            </span>
+            <span class="col-md-6">
+                @Html.TextBox("nombreproducto", null, new { @class = "form-control", placeholder = "Ingresar Nombre del Producto" })
+            </span>
+        </div>
+        <div class="form-group">
+            <span class="col-md-2">
+                Codigo de Barras
+            </span>
+            <span class="col-md-6">
+                @Html.TextBox("codbarra", null, new { @class = "form-control", placeholder = "Ingresar Codigo de Barra" })
+            </span>
+        </div>
+        <div class="form-group">
+            <span class="col-md-2">
+                Familia
+            </span>
+            <span class="col-md-6">
+                @Html.TextBox("familia", null, new { @class = "form-control", placeholder = "Ingresar Familia" })
+            </span>
+        </div>
+        <div class="form-group">
+            <span class="col-md-2">
+                Precio
+            </span>
+            <span class="col-md-6">
+                @Html.TextBox("precio", null, new { @class = "form-control", placeholder = "Ingresar Precio" })
+            </span>
+        </div>
+        <div class="form-group">
+            <span class="col-md-2">
+                Descuento
+            </span>
+            <span class="col-md-6">
+                @Html.TextBox("descuento", null, new { @class = "form-control", placeholder = "Ingresar Descuento" })
+            </span>
+        </div>
+        <div class="form-group">
+            <span class="col-md-2">
+                Descripcion
+            </span>
+            <span class="col-md-6">
+                @Html.TextBox("descripcion", null, new { @class = "form-control", placeholder = "Ingresar Descripcion" })
+            </span>
+        </div>
+            <div class="form-control">
+                <button type="reset" class="btn btn-info">Limpiar</button>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+
+    }
+
+</fieldset>
